@@ -1,0 +1,217 @@
+* {
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+
+body {
+	background: #031026;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: "Caslon540";
+	font-size: 110px;
+	font-weight: normal;
+	color: #FFF;
+	line-height: 121px;
+}
+
+p {
+	font-family: "Hack";
+	font-size: 20px;
+	color: #898EB7;
+	line-height: 1.5em;
+}
+
+.header {
+	padding-bottom: 8rem;
+}
+
+.logo {
+	text-align: right;
+	color: #FFF;
+	font-family: "Euclid Flex";
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.logo .full-stop {
+	color: #00FFFE;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.code-art-header {
+	background: #1B2049;
+	padding: 5rem;
+	position: relative;
+}
+
+.code-art-header-layout {
+	display: flex;
+}
+
+.art-section {
+	background: url(art-bg.png) no-repeat;
+	padding: 5rem;
+	margin: 1rem;
+	width: 50%;
+}
+
+.code-art-header h2 {
+	display: inline-block;
+	margin: 0;
+	font-family: "Circular Std";
+	font-weight: normal;
+	color: #00FFFE;
+}
+
+.art-section h2 {
+	font-size: 60px;
+}
+
+.code-section {
+	position: relative;
+	width: 50%;
+	overflow: hidden;
+	margin: 1rem;
+}
+
+.code-section h2 {
+	font-size: 70px;
+	font-family: "Hack";
+	font-weight: normal;
+	font-style: italic;
+	position: absolute;
+	z-index: 2;
+	top: 7rem;
+	text-align: center;
+	width: 100%;
+}
+
+
+.code-bg {
+	position: absolute;
+	max-width: 400px;
+	color: #2F3C76;
+	font-family: "Hack";
+	font-size: 20px;
+	z-index: 0;
+	text-align: center;
+	width: 100%;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.line-divider {
+	flex: 0 0 auto;
+	width: 2px;
+	background: #00FFFE;
+	margin: 0 2rem;
+}
+
+
+.circular-button {
+	background: #00FFFE;
+	color: #1B2049;
+	border-radius: 5rem;
+	text-align: center;
+	display: inline-block;
+	padding: 1rem;
+	font-family: "Circular Std";
+	font-size: 32px;
+	min-width: 20rem;
+	text-decoration: none;
+
+	transition: color 100ms;
+}
+
+a.circular-button:hover {
+	color: #FFF;
+}
+
+
+.code-art-header .circular-button {
+	position: absolute;
+	left: calc(50% - 10rem);
+	top: -2rem;
+}
+
+
+.footer {
+	background: #1B2049;
+	text-align: center;
+	overflow: hidden;
+}
+
+.footer .circular-button {
+	margin: 5rem 0;
+}
+
+.footer-links {
+	margin: 1rem 0;
+}
+
+.footer-links a {
+	color: #FFF;
+	font-size: 30px;
+	margin: 0 0.5rem;
+}
+
+
+.projects-section {
+	padding: 5rem;
+}
+
+.project-item {
+	color: #FFF;
+	font-family: "Hack";
+	margin-bottom: 2rem;
+}
+
+.project-item .title {
+	font-family: "Circular Std";
+	font-size: 40px;
+	margin: 0;
+}
+
+.project-item .title a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.project-item .date {
+	color: #898EB7;
+	margin-left: 2.5rem;
+	margin-top: 1ex;
+}
+
+
+.project-item-toggle {
+	transition: transform 300ms;
+	color: #00FFFE;
+	font-size: 30px;
+	margin-right: 1rem;
+}
+
+.project-item.active .project-item-toggle {
+	transform: rotate(90deg);
+}
+
+
+.project-item-content {
+	white-space: pre-wrap;
+	padding: 1rem 0;
+	margin-left: 2.5rem;
+	line-height: 1.5em;
+	font-size: 20px;
+	color: #898EB7;
+}

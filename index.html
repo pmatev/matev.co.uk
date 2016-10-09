@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Peter Matev | Developer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <span>PM</span><span class="full-stop">.</span>
+        </div>
+        <div class="container">
+            <h1>Software Developer</h1>
+            <p>Hi, I'm Peter.</p>
+            <p>I am a full-stack web developer, entrepreneur, artist, designer, film-maker, and general geek-for-hire.</p>
+            <p>Here are a few of my past projects. You can find more on my Github, Twitter and LinkedIn. If you would like to work together, drop me an email. :)</p>
+        </div>
+    </div>
+    <div class="code-art-header">
+        <div class="container">
+            <div class="circular-button">
+                Projects
+            </div>
+            <div class="code-art-header-layout">
+                <div class="code-section">
+                    <div class="code-bg">
+                    01010111 01101111 01110111 00100000 01111001 01101111 01110101 00100000 01100110 01101111 01110101 01101110 01100100 00100000 01110100 01101000 01101001 01110011 00101110 00100000 01000100 01110010 01101111 01110000 00100000 01101101 01100101 00100000 01100001 01101110 00100000 01100101 01101101 01100001 01101001 01101100 00100000 00111011 00101001
+                    </div>
+                    <h2>{code}</h2>
+                </div>
+                <div class="line-divider"></div>
+                <div class="art-section">
+                    <h2>Art &amp;<br /> Design</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-section">
+        <div class="container">
+            <div id="projects"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="mailto:peter@matev.co.uk" class="circular-button">Contact Me</a>
+        <div class="footer-links">
+            <a href="https://github.com/pmatev"><span class="fa fa-github"></span></a>
+            <a href="http://linkedin.com/in/petermatev"><span class="fa fa-linkedin"></span></a>
+            <a href="mailto:peter@matev.co.uk"><span class="fa fa-envelope-o"></span></a>
+        </div>
+    </div>
+
+    <script id="project-item" type="text/x-handlebars-template">
+        {{#projects}}
+        <div class="project-item">
+            <div class="project-item-header">
+                <h3 class="title">
+                    <span class="project-item-toggle fa fa-angle-right"></span>
+                    <a href="{{url}}">{{title}}</a>
+                </h3>
+                <div class="date">{{date}}</div>
+            </div>
+            <div class="project-item-content">{{{ content }}}</div>
+        </div>
+        {{/projects}}
+    </script>
+    <script type="text/javascript">
+        var source = document.getElementById("project-item")
+        var template = Handlebars.compile(source.innerHTML);
+
+        var data = {
+            projects: [{
+                title: 'Citigroup',
+                url: 'https://citi.com',
+                date: '2016',
+                content: ''
+            }, {
+                title: 'Membi (Co-founder)',
+                url: 'https://membi.co.uk',
+                date: '2015-2016',
+                content: `Customer facing site (SEO / Isomorphic App)
+Partner Portal (Single Page App)
+
+Backend: Python / Django / NodeJS / Docker
+Frontend: ReactJS
+Hosted on AWS, S3, Cloudflare
+Postgres (AWS RDS)
+Stripe, Google Maps, Google Calendar`,
+            }, {
+                title: 'Areski Capital LLP',
+                date: '2014-2015',
+                content: ''
+            }, {
+                title: 'Geneity Ltd.',
+                url: 'http://www.geneity.co.uk/',
+                date: '2013-2014',
+                content: ''
+            }]
+        };
+
+        document.getElementById('projects').innerHTML = template(data);
+    </script>
+</body>
+</html>
