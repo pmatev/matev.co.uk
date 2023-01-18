@@ -12,7 +12,7 @@ export function App() {
     <div>
       <h1>Peter Matev</h1>
       <img className="avatar" src={pic} />
-      <p>Engineering Leader @ Wayve, Senior Engineer @ Ex-Deliveroo, Ex-Founder, Ex Film Maker</p>
+      <p>Engineering Leader @ <a href="https://wayve.ai" target="_blank">Wayve</a>, Senior Engineer @ Ex-Deliveroo, Ex-Founder, Ex Film Maker</p>
       <p>Contact me: <code><a href="mailto:peter@matev.co.uk">peter@matev.co.uk</a></code></p>
 
       <div style={{padding: '1rem'}}></div>
