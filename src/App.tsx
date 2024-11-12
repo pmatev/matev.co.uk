@@ -12,7 +12,7 @@ export function App() {
     <div>
       <img className="avatar" src={pic} alt="Profile" />
       <h1>Peter Matev</h1>
-      <p>Engineering Leader @ <a href="https://wayve.ai" target="_blank" rel="noreferrer">Wayve</a>, Senior Engineer @ Ex-Deliveroo, Ex-Founder, Ex Film Maker</p>
+      <p>Engineering Leader @ <a href="https://www.isomorphiclabs.com/" target="_blank" rel="noreferrer">Isomorphic Labs</a>, Prev. Engineering @ <a href="https://wayve.ai" target="_blank" rel="noreferrer">Wayve</a>, <a href="https://deliveroo.co.uk/" target="_blank" rel="noreferrer">Deliveroo</a>, Ex Founder, Ex Film Maker</p>
       <p>Email me 👇</p>
       <p><code><a href="mailto:peter@matev.co.uk">peter@matev.co.uk</a></code></p>
 
